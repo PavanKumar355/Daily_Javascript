@@ -22,3 +22,23 @@ const s1 = {
 // console.log(s1, typeof s1);
 console.log(s1.Name, s1.Age , s1.Fees_Paid);
 console.log("Marks of Maths:",s1.Marks.Maths);
+
+//array datatype
+let arr=['2',34,true,'alice']
+console.log(arr)
+
+//object datatype
+let students={
+    'name':'alice',
+    'age':23,
+    'location':'bangalore',
+    'city':'bangkok'
+}
+console.log(students)
+
+//combining array and object
+let arr1=[
+    {'name':'alice','age':23,'location':'bangalore','city':'bangkok'},
+    {'name':'bob','age':22,'location':'bangladesh','city':'us'},
+]
+console.log(arr1)
