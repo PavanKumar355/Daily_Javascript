@@ -20,3 +20,14 @@ console.log(!true);//false
 
 //Ternary Operator:
 console.log((10 == '10' ? 'Equal by Value': 'Not Equal by Value'));
+
+//more examples on operators
+console.log(5&&3)
+console.log(5&&0)
+console.log(4&&" ")
+console.log(" "&&" ")
+
+//bitwise operators
+console.log(5<<2)
+console.log(5>>2)
+console.log(5>>>1)
