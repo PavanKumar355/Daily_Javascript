@@ -1,1 +1,1 @@
-# Daily_Javascript
+daily practices on javascript
