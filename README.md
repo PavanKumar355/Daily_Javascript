@@ -1,4 +1,4 @@
-<h1>Day-wise javascripts codes</h1>
+<h1>Day-wise javascripts topics</h1>
 26th-december :
 ## 📚 **Day-wise Practice Codes Repository**
 
