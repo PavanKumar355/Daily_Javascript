@@ -28,3 +28,4 @@ function div(a,b){
     return a/b;
 }
 console.log("This Division is: ",div(500,10))
+

@@ -42,3 +42,10 @@ let arr1=[
     {'name':'bob','age':22,'location':'bangladesh','city':'us'},
 ]
 console.log(arr1)
+
+//function Object
+function greet(){
+    console.log("hello how are you");
+}
+greet();
+console.log(typeof greet);
