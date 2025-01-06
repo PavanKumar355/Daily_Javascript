@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   var global = 100;
+   console.log("Value of global is: ",global);
+//    console.log("Value of outer is: ",outer);
+//    console.log("Value of inner is: ",inner1);
+   function Outer(){
+    var outer = 200;
+    console.log("Value of global is: ",global);
+    console.log("Value of outer is: ",outer);
+    // console.log("Value of inner1 is: ",inner1);
+    function inner(){
+        var inner1 =300;
+        console.log("Value of global is: ",global);
+    console.log("Value of outer is: ",outer);
+    console.log("Value of global is: ",inner1);
+    }
+    inner();
+   }
+   Outer();
+    </script>
+</body>
+</html>
