@@ -1,0 +1,36 @@
+<body>
+<script>
+    /*
+    1.WAP to display addition of numbers 
+    (numbers will be passed to a function as an argument at the time of 
+    calling of function.)
+    For e.g: add(10,20), add(50,60,70), add(), add(10)
+    
+    2.WAP to find sum of array elements using reduce(): and explain it.
+    
+    3.Mention Function names for below operations:
+    a. Add ele at the end of an array ://push()
+    b. Removes ele from  the 0th index ://shift
+    c. Creating sub array without changing original array ://slice()
+    d. Checking index of specific element value: //index()
+    e. Checking wther element is present in an array or not: //contains()
+    */
+
+    // sum of array elements
+    let arr=[1,2,3,4,5];
+    let res=arr.reduce((acc,ele)=>acc+ele,0);
+    console.log(res);
+
+    //addition of numbers
+    function add(...args){
+        if(args.length===0){
+        console.log("invalid arguments.");
+        }else {
+            let res = args.reduce((acc,ele)=>acc+ele,0);
+            console.log(res);
+        }
+    }
+    add(1,2);
+    add();
+    </script>
+    </body>

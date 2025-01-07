@@ -1,0 +1,23 @@
+<script>
+    class Student{
+        constructor(s_name,s_age,s_email){
+            this.name=s_name;
+            this.age=s_age;
+            this.email=s_email;
+        }
+        eat(){
+            console.log("Alice is eating.");
+        }
+        learn(){
+            console.log("John is learning.");
+        }
+    }
+    s1 = new Student('Alice',23,'alice@gmail.com');
+        console.log(s1.name, s1.age, s1.email);
+    
+    s2 = new Student('John',24,'john@gmail.com');
+    console.log(s2.name, s2.age, s2.email);
+
+    s1.eat();
+    s2.learn();
+</script>
