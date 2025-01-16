@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: green;
+        }
+        body.dark-mode{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome to our website</h1>
+    <button class="mode" class="btn">dark mode</button>
+    <script>
+        document.getElementById('mode').addEventListener('click',function(){
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            this.textContent=isDarkMode?'Light mode':'dark mode';
+        })
+
+        
+    </script>
+</body>
+</html>

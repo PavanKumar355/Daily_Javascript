@@ -1,0 +1,23 @@
+<body>
+    <script>
+        class Employee{
+            constructor(e_name,e_age) {
+                this.name=e_name;
+                this.age=e_age;
+            }
+            work(){
+                console.log(this.name," is working..");
+            }
+        }
+        e1=new Employee('Akash',23);
+        console.log(e1.age,e1.name);
+        e1.work();
+        e2=new Employee('Abkit',25);
+       console.log('Employee name is:',e2)
+e2.work();
+</script>
+</body>
+
+
+<!-- 1. instance variables will be declared inside the constructor.
+2. instance variables will be present in the object. -->

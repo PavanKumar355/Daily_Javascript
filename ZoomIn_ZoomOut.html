@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <!-- <style>
+        .btn{
+            padding-left: 50px;
+            padding-top: 50px;
+            text-align: center;
+            display: flexbox;
+            background-color:aliceblue;
+        }
+        .container{
+            border: 5px solid gray;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style> -->
+    <html lang="en">
+        <head>
+        <title>DOM</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+        <h1 class="header">Welcome to our website</h1>
+        <ul>
+       
+        </ul>
+       
+        <button onclick="add()">ADD ITEM</button>
+        <button onclick="remove()">REMOVE ITEM</button>
+       
+        <script>
+             const list =document.querySelector('ul');
+
+// Create a new list item
+function add(){
+const newItem =document.createElement('11');
+newItem.textContent = "New Item";
+// Add the new item to the list
+list.appendChild(newItem);
+}
+
+// Remove the first item from the list
+function remove(){
+const firstItem = list.querySelector('li');
+list.removeChild(firstItem);
+}
+        </script>
+        </body>
+        </html>

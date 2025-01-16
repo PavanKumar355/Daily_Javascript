@@ -1,0 +1,31 @@
+<body>
+<script>
+class Product{
+    constructor(name,price){
+        this.name=name;
+        this.price=price;
+    }
+    display(){
+        console.log(`Name: ${this.name} costs: ${this.price}.`);
+    }
+}
+
+//child class
+class Book extends Product {
+    constructor(name,price,author){
+        super(name,price);
+        this.author=author;
+    }
+    display() {
+        super.display();
+        console.log(`Written by ${this.author}.`);
+    }
+}
+
+p1=new Product('alice',2353);
+p1.display();
+
+b1=new Book('1984',350,'Alice');
+b1.display();
+</script>
+</body>

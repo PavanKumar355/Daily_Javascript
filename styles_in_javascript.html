@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>styles in javascript</title>
+    <style>
+        #special{
+            background-color: antiquewhite;
+            border: black 5px solid;
+        }
+        .one{
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .two{
+            background-color: rgb(186, 135, 67);
+            padding: 50px;
+            text-align: justify;
+            border-radius: 10px;
+        }
+         h1:hover{
+            color: rgb(114, 36, 10);
+         }
+         img:hover{
+            border-radius: 50px;
+            transform: rotate(-120deg);
+         }
+    </style>
+</head>
+<body>
+    <div id="special">
+        <h1>this is heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolor!</p>
+    <img id="image" src="makar_sankranti.jpg" alt="image of nature">
+<br><br>
+
+    Name : <input type="text" id="inp">
+    </div>
+
+    <script>
+        var x= document.getElementById('special');
+        // x.style.color='white';
+        // x.style.backgroundColor='black';
+
+        //getting attribute value for 'id' attribute
+        console.log(x.getAttribute('id'));
+
+        x.setAttribute('class','one');
+        console.log(x.getAttribute('class'));
+        x.classList.add('two');
+        console.log(x.getAttribute('class'));
+ 
+        //applying styles to img 
+        var image1 =document.getElementById('image');
+        image1.style.width ='200px';
+        image1.style.height='200px';
+         
+        //setting new attribute to the <img> tag
+        image1.setAttribute('src','nature.jpg');
+
+        //getting and setting attributes for forms
+        var input = document.getElementById('inp');
+        console.log(input.getAttribute('id'));
+        input.setAttribute('value','enter your name');
+
+        //removing one classname using remove() of classList
+        x.classList.remove('one');
+
+        console.log(image1.getAttribute('id'));
+        image1.classList.replace('image','image2');
+        console.log(image1.className);
+    </script>
+</body>
+</html>

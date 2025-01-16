@@ -27,3 +27,12 @@ function n(...args){
     console.log(res);
 }
 n(1,2,3,4,5);
+
+let prod=1;
+function fun(n){
+for(let i=n;i>=1;i--){
+   prod=i*prod;
+}
+console.log(prod);
+}
+fun(5);

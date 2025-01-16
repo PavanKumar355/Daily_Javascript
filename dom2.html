@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>querySelector()</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.p1</p>
+    <p>Lorem ipsum dolor sit amet.p2</p>
+
+    <h1></h1>
+    <script>
+        var target_ele = document.querySelector('p') ;
+        console.log(target_ele);
+
+        var target_heading = document.querySelector('h1') ;
+        target_heading.classList.add('head');
+        target_heading.textContent='hello';
+        console.log(target_heading);
+    </script>
+</body>
+</html>
+<!-- querySelector() will always target the first element
+  which is matching with the given selector. -->

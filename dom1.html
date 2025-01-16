@@ -1,0 +1,38 @@
+
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .addBackgroundColor{
+            color: white;background-color: black;
+        padding: 15px;width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">Hello</p>
+    <button onClick="changeColor()">Click</button>
+<script>
+    function changeColor(){
+        var toggle=false;
+        var target_ele=document.getElementById('para');
+        // console.log(target_ele);
+        // target_ele.style.color='white';
+        // target_ele.style.color='black';
+       
+        if(!toggle){
+        //  target_ele.style.color='white';
+        //  target_ele.style.backgroundColor='black';
+        target_ele.classList.add('addBackgroundColor');
+         toggle=true;
+        }
+        else {
+            // target_ele.style.color='black';
+            // target_ele.style.backgroundColor='white';
+            target_ele.classList.remove('addBackgroundColor');
+            toggle=false;
+        }
+    }
+</script>
+</body>
+</html>

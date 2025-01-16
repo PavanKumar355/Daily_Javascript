@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name){
+            console.log('hello',name);
+        }
+        function processGreet(callback){
+            console.log(callback());
+        }
+        processGreet(greet);
+
+//inbuilt higherorder functions ->map,filter,foreach,reduce 
+        let arr=[1,2,3,4,5]
+        var even=arr.filter((ele)=>ele%2===0)
+        console.log(even);
+
+        var square=arr.map(function(ele){
+            return ele*ele;
+        });
+        console.log(square);
+
+        var sum=arr.reduce((ele,acc)=>ele+acc,0);
+        console.log(sum);
+    </script>
+</body>
+</html>

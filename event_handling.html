@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_handling</title>
+    <style>
+           #special{
+                position: absolute;
+                top: 40%;
+                left:40%;
+           }
+           #btn{
+            color: white;
+            background-color: black;
+            padding: 20px;
+            border: black 2px solid;
+            border-radius: 10px;
+            width: 200px;
+            font-size: larger;
+           }
+           #fullname{
+            height: 30px;
+           }
+    </style>
+</head>
+<body>
+    <div id="special"> 
+           Name : <input type="text" id="fullname">
+    <br><br>
+    <!-- inline event handling -->
+    <!-- <button id="btn" onclick = "document.body.style.backgroundColor='yellow'">changeColor</button> -->
+   
+    <button id="btn" onclick="change()">Change background</button>
+<!--
+   <script>
+    function change(){
+         document.body.style.backgroundColor='green'
+    }
+   </script> -->
+
+   <!-- 2) using event properties in javascript -->
+   <script>
+let b1=document.getElementById('btn')
+// btn.onclick=change;
+// function change() {
+//     document.body.style.backgroundColor='aqua';}
+
+// using anonymous function
+// btn.onclick=function() {
+//      document.body.style.backgroundColor='aqua';}
+//    
+
+//  using addEventListener() method in javascript 
+
+b1.addEventListener('click',function(){
+    document.body.style.backgroundColor='green'
+});
+// function change(){
+//     document.body.style.backgroundColor='green'
+// }
+
+let fname=document.getElementById('fullname');
+fname.addEventListener('focus',change)
+
+// function change(){
+//     console.log(this)
+//     fname.style.backgroundColor='green'
+// }
+
+function change(e){
+    console.log(e)
+    fname.style.backgroundColor='green'
+}
+</script>
+</div>
+</body>
+</html>
