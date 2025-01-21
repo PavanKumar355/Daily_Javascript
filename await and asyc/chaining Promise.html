@@ -1,0 +1,47 @@
+<script>
+    function placeorder() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("order placed");
+            resolve();
+        },2000)
+        })
+    }
+
+
+        function makePayment() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("payment received");
+            resolve();
+        },2000)
+        })
+
+        function confirmOrder() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("order confirmed");
+            resolve();
+        },2000)
+        })
+    }
+
+    
+    function sendEmail() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("successfully order");
+           resolve();
+        },1000)
+        })
+    }
+}
+
+placeorder()
+.then(()=>makePayment())
+.then(()=>confirmOrder())
+.then(()=>sendEmail())
+.then(()=>console.log('end'))
+
+console.log("synchronous in asynchronus ")
+</script>

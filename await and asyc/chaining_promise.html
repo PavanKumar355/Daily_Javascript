@@ -1,0 +1,24 @@
+<script>
+    let myPromise = new Promise(function(resolve,reject){
+        let success = true;
+
+        if(success){
+            resolve('First step complete');
+        }
+        else{
+            reject('something went wrong');
+        }
+    });
+
+    myPromise
+    .then(function(result){
+        console.log(result);
+        return 'next step complete.';
+    })
+    .then(function(nextResult){
+      console.log(nextResult);
+    })
+    .catch(function(error){
+        console.log(error);
+    });
+</script>

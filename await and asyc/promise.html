@@ -1,0 +1,23 @@
+<script>
+    // resolve=then()
+    // reject=catch()
+
+    let p1=new Promise((resolve,reject)=>{
+        // setTimeout(()=>{
+        //     console.log("promise executed");
+        // },5000);
+
+        setTimeout(()=>{
+            // console.log("logic to fetch the data ");
+            // resolve('Alice: 1234')
+            console.log('Login to fetch the data :Failure');
+            reject();
+        },5000)
+    });
+
+    p1.then((data)=>{
+        console.log('process the receives data:',data);
+    }).catch(()=>{
+        console.log('error occured while fetching the data')
+    })
+</script>

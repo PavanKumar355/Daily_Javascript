@@ -1,0 +1,13 @@
+<script>
+    function OrderFood(item,callback){
+        console.log(`Ordered food item ${item}`);
+     setTimeout(()=>{
+        console.log("Food is ready to eat..");
+     },1000);
+        callback();
+    }
+    function eatFood(){
+        console.log("food item is ready to serve..")
+    }
+    OrderFood("Pasta",eatFood);
+</script>

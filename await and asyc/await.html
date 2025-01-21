@@ -1,0 +1,22 @@
+<script>
+    let p1=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("Task 2")
+            resolve();
+        },5000)
+    })
+    async function process() {
+        console.log("task 2");
+        await p1;
+        console.log("task 3 depend on task 2(executed first)")
+    }
+    process()
+    console.log("some other tasks")
+</script>
+
+<!-- All the instructions which are present inside the function
+after promise they should wait for promise to resolve or reject.
+
+But the Intructions which are outside the functions should
+not wait for promise to resolve or reject. -->
+

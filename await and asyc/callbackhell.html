@@ -1,0 +1,38 @@
+<script>
+    function placeOrder(item,callback){
+        setTimeout(()=>{
+            console.log('order placed',item);
+        callback();
+        },3000);
+    }
+    
+    function makepayment(amount,callback){
+        setTimeout(()=>{
+            console.log('payment received',amount);
+        callback()
+        },4000);
+    }
+    
+    function confirmOrder(callback){
+        setTimeout(()=>{
+            console.log('order confirmed...!');
+        callback();
+        },1000);
+    }
+    
+    function sendEmail(){
+        setTimeout(()=>{
+            console.log('successfully ordered..');
+        },1000);
+    }
+    
+
+    placeOrder('shirts',()=>{
+        makepayment(2500,()=>{
+            confirmOrder(()=>{
+                sendEmail()
+            })
+        })
+    })
+    console.log('task1');
+</script>

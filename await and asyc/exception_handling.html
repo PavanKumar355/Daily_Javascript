@@ -1,0 +1,35 @@
+<script>
+    console.log('task1');
+    function sometask(){
+        console.log(z);
+    }
+    try {
+        sometask()
+    } catch (error) {
+        console.log('Some error occured and handled')
+    }
+    console.log('Task2');
+    console.log('task3');
+
+
+    console.log('taks1');
+    try {
+        console.log(z)
+    } catch (error) {
+error.stack;
+    }
+    console.log('task2');
+
+
+    
+    console.log('taks1');
+    try {
+        console.log(z)
+    } catch (error) {
+console.log("error message: ",error.stack);
+    }
+    finally{
+        console.log('finally block executed');
+    }
+    console.log('task2');
+</script>
