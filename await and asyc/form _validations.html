@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validate(event)">
+        <label>First name:</label>
+        <input type="text" id="input_ele">
+        <span id="msg">*</span>
+        <br><br>
+        <button>Submit</button>
+    </form>
+
+    <script>
+        function validate(){
+            event.preventDefault();
+            var name=document.getElementById('input_ele').value;
+        if(name==''){
+            target=document.getElementById('msg');
+            target.textContent='first name should not be empty'
+        }else if(name.length<2){
+            target=document.getElementById('msg');
+            target.textContent='minimum length is 2'
+            
+        }
+        }
+    </script>
+</body>
+</html>
